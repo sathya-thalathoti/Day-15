@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#4e4f4a;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Calender */
+
+.section{
+    background-color: #e76052;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    height: 100vh;
+    width: 100vw;
+}
+
+.calender{
+    background-color: #f7e9dd;
+    height: 80vh;
+    width: 80vw;
+    padding: 5vw;
+    border: 2px solid #4e4f4a;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+
+.row{
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.month{
+    font-size: 32px;
+    /* border: 2px solid black; */
+    margin-bottom: 20px;
+    width: 35%;
+    text-align: center;
+    background-color: #4e4f4a;
+    color: #f7e9dd;
+    padding: 10px;
+}
+
+
+
+.day{
+    height: 8vh;
+    width: 8vw;
+    border: 1px solid #dd6253;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row:nth-child(2) .day:nth-child(1),.row:nth-child(3) .day:nth-child(4){
+    background-color: #dd6253;
+}
+
+small{
+    font-size: 8px;
+    display: block;
+}
+
+
+/* Calci */
+
+.num{
+    height: 8vh;
+    width: 5vw;
+    text-align: center;
+    padding: 10px;
+    /* border: 2px solid #4e4f4a; */
+}
+
+.calci{
+    background-color: #f7e9dd;
+    height: 65vh;
+    width: 28vw;
+    border-radius: 5vw;
+    border: 2px solid #4e4f4a;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+
+.calci-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.calci-row:first-of-type{
+ height: 15vh;
+ border-bottom: 2px solid #4e4f4a;
+}
+
+.calci-row:last-of-type .num:last-of-type{
+    background-color: #dd6253;
+    border-radius: 50%;
+}
